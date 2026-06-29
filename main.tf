@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "rg1"
+  name     = "rg2"
   location = "West Europe"
 }
 #NEW
