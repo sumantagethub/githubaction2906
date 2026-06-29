@@ -6,11 +6,7 @@ jobs:
   job1:
     name: azure login
     runs-on: ubuntu-22.04
-    
-permissions:
-  id-token: write
-  contents: read
-  steps:
+    steps:
       - name: Azure login
         uses: azure/login@v3
         with:
@@ -24,3 +20,8 @@ permissions:
           azcliversion: latest
           inlineScript: |
             az account show
+    
+permissions:
+  id-token: write
+  contents: read
+  
